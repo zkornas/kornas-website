@@ -1,5 +1,45 @@
 <html>
     <head>
         <title>Zacharia Kornas</title>
+        <script src="javascript.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+            <a href="#" onclick="closeSidebar(); showContent('aboutme');">About</a>
+            <a href="#" onclick="closeSidebar(); showContent('myresearch')">Research</a>
+            <a href="#" onclick="closeSidebar(); showContent('myprojects')">Projects</a>
+            <a href="#" onclick="closeSidebar(); showContent('contactme')">Contact</a>
+        </div>
+        
+        <div id="sidebar">
+            <button class="openbtn" onclick="openSidebar()">&#9776;</button>
+        </div>
+        <div id="aboutme" class="aboutme">
+            <h1>About Me</h1>
+            <p>Hello! My name is Zacharia Kornas and I am an Informatics student at the University of Washington. I am interested
+                in all things related to computer security, especially security research. Please feel free to take a look at some of
+                my projects as well as research interests on the side bar. 
+            </p>
+        </div>
+        <div id="myresearch" class="pagecontent">
+            <h1>My Research</h1>
+            <p>
+                This is where I outline my research projects!
+            </p>
+        </div>
+        <div id="myprojects" class="pagecontent">
+            <h1>My Projects</h1>
+            <p>
+                This is where I share all the cool projects I've done!
+            </p>
+        </div>
+        <div id="contactme" class="pagecontent">
+            <h1>Contact Me!</h1>
+            <p>
+                Email: zkornas@uw.edu
+            </p>
+        </div>
+    </body>
 </html>
