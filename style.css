@@ -53,7 +53,7 @@ h1 {
     height: 60%;
     color: white;
     padding: 10px 15px;
-    border: none;
+    border-radius: 10px;
 }
 
 .openbtn:hover {
@@ -78,12 +78,14 @@ h1.heading {
 p.heading {
     margin: 0;
     padding: 0;
+    color: #494949;
 }
 
 .flex-container-header {
     display: flex;
     justify-content: space-between;
     background-color: #d9d8d8;
+    border-radius: 10px;
 }
 
 .flex-child-header {
@@ -97,6 +99,17 @@ p.heading {
 
 .flex-child-header:last-child {
     text-align: right;
+}
+
+p.caption {
+    padding-top: 10px;
+    margin: 0;
+}
+
+a.caption {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
 }
 
 .aboutme {
@@ -122,14 +135,22 @@ p.heading {
 
 .flex-child:first-child {
     margin-right: 20px;
+    flex-grow: 1;
 }
 
 .flex-child:last-child {
     text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5%;
+    height: 250px;
 }
 
 .zach {
-    width: 33%;
+    max-height: 100%;
+    min-height: 90%;
+    border-color:#d9d8d8;
+    border-radius: 10px;
+    border-style: solid;
 }
 
 
