@@ -52,11 +52,26 @@
 
 .aboutme {
     padding-left: 20px;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .pagecontent {
     padding-left: 20px;
     display: none;
+}
+
+.container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.mypicture {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
