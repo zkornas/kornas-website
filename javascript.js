@@ -3,11 +3,13 @@ var myPageIds = ['aboutme', 'myresearch', 'myprojects', 'contactme'];
 const openSidebar = () => {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("sidebar").style.marginLeft = "250px";
+    document.getElementById("blur").style.filter = 'blur(2px)';
 };
 
 const closeSidebar = () => {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("sidebar").style.marginLeft = "0";
+    document.getElementById("blur").style.filter = 'blur(0px)';
 };
 
 function showContent(id) {

@@ -9,6 +9,20 @@
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+.blur {
+    filter: blur(0px);
+    transition: 0.5s;
 }
 
 .sidebar a {
@@ -36,6 +50,7 @@
     font-size: 1rem;
     cursor: pointer;
     background-color: #4b2e83;
+    height: 60%;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -50,28 +65,71 @@
     padding: 20px;
 }
 
+.heading {
+    text-align: right;
+    padding: 10px;
+}
+
+h1.heading {
+    margin: 0;
+    padding: 0;
+}
+
+p.heading {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d9d8d8;
+}
+
+.flex-child-header {
+    flex: 1;
+}
+
+.flex-child-header:first-child {
+    align-self: center;
+    padding-left: 10px;
+}
+
+.flex-child-header:last-child {
+    text-align: right;
+}
+
 .aboutme {
-    padding-left: 20px;
+    padding-left: 100px;
     content: "";
     clear: both;
     display: table;
+    font-size: 20px;
 }
 
 .pagecontent {
-    padding-left: 20px;
+    padding-left: 100px;
     display: none;
 }
 
-.container {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+.flex-container {
+    display: flex;
 }
 
-.mypicture {
-    content: "";
-    clear: both;
-    display: table;
+.flex-child {
+    flex: 1;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+.flex-child:last-child {
+    text-align: center;
+}
+
+.zach {
+    width: 33%;
 }
 
 
