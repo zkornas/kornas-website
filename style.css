@@ -151,22 +151,31 @@ a.caption {
     border-style: solid;
 }
 
-.flex-tic-tac-toe{
+.flex-container-projects {
     display: flex;
+    flex-direction: column;
 }
 
-.flex-tic-tac-toe-child {
+.flex-child-projects {
     flex: 1;
 }
 
-.flex-tic-tac-toe-child:last-child {
+.flex-container-single-project {
+    display: flex;
+}
+
+.flex-child-single-project {
+    flex: 1;
+}
+
+.flex-child-single-project:last-child {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 5%;
     height: 250px;
 }
 
-.flex-tic-tac-toe-child:first-child {
+.flex-child-single-project:first-child {
     margin-right: 20px;
     flex-grow: 1;
     font-size: 22px;
