@@ -3,6 +3,7 @@
         <title>Zacharia Kornas</title>
         <script src="javascript.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="img/zach.png">
     </head>
     <body>
         <div id="mySidebar" class="sidebar">
@@ -10,8 +11,7 @@
             <a href="#" onclick="closeSidebar(); showContent('aboutme');">About</a>
             <a href="#" onclick="closeSidebar(); showContent('myresearch')">Research</a>
             <a href="#" onclick="closeSidebar(); showContent('myprojects')">Projects</a>
-            <a href="#" onclick="closeSidebar(); showContent('contactme')">Contact</a>
-            <a href="https://drive.google.com/file/d/1pgQCuQhpwF4vsCSSk2-I0NfNEGIj6nh9/view?usp=sharing"
+            <a href="docs/Zacharia Kornas Resume.pdf"
             target="_blank"onclick="closeSidebar();">CV</a>
         </div>
         
@@ -37,9 +37,8 @@
                 <div class="flex-container">
                     <div class="flex-child">
                         <h1>About Me</h1>
-                        <p>Hello! My name is Zacharia Kornas and I am an Informatics student at the University of Washington. I am interested
-                            in all things related to computer security, especially security research. Please feel free to take a look at some of
-                            my projects as well as research interests on the side bar. 
+                        <p class="aboutmeparagraph">
+                            Hello! My name is Zacharia Kornas and I am an Informatics student at the University of Washington. I am interested in all things related to computer security and security research. I am currently researching bandwidth inflation attacks within the Tor network, and hope to explore how these attacks can be used to deanonymize Tor users. 
                         </p>
                     </div>
                     <div class="flex-child">
@@ -47,36 +46,64 @@
                         <p class="caption">
                             Zacharia Kornas
                         </p>
-                        <a class="caption" href="#" onclick="showContent('contactme'); closeSidebar();">Contact me!</a>
+                        <p style="font-size: 16px;">
+                            Email: <a target="_blank" href="zkornas@uw.edu">zkornas@uw.edu</a> <br>
+                            Github: <a target="_blank" href="https://github.com/zkornas">github.com/zkornas</a> <br>
+                            LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/zkornas/">linkedin.com/in/zkornas/</a>
+                        </p>
                     </div>
                 </div>
             </div>
             <div id="myresearch" class="pagecontent">
                 <h1>My Research</h1>
-                <p>
-                    This is where I outline my research projects!
-                </p>
+                <div class="flex-container-projects">
+                    <div class="flex-child-projects">
+                        <div class="flex-container-single-project">
+                            <div class="flex-child-single-project">
+                                <h2>Bandwidth Inflation Attacks in Tor</h2>
+                                <p>
+                                    I am currently working on a research project exploring bandwidth inflation attacks within Tor. Specifically, we are researching how Tor’s bandwidth scanner (sbws) is used to verify bandwidth measurements of relays within the Tor network, and how an adversary can manipulate these readings to gain an unfair advantage in circuit construction. To do this, we have constructed a simulated Tor network using Raspberry Pis acting as various nodes.
+                                </p>
+                            </div>
+                            <div class="flex-child-single-project">
+                                <img class="tic-tac-toe-img" src="img/tor.png" alt="The Tor logo">
+                            </div>
+                        </div>
+                        <div class="flex-container-single-project">
+                            <div class="flex-child-single-project">
+                                <h2>SimulaTor</h2>
+                                <p>
+                                    While tools such as Chutney and shadow allow researchers to create virtual Tor networks, there is no resource to help researchers create a simulated Tor network using physical nodes. While researching bandwidth inflation attacks, I have been compiling information on creating a physical private Tor network and plan to release the SimulaTor framework soon. Replicability is extremely important in research, and I hope that the SimulaTor framework will allow other researchers to be able to easily create simulated Tor networks to verify other’s findings.
+                                </p>
+                            </div>
+                            <div class="flex-child-single-project">
+                                <img class="tic-tac-toe-img" src="img/tor.png" alt="The Tor logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="myprojects" class="pagecontent">
                 <h1>My Projects</h1>
                 <div class="flex-container-projects">
                     <div class="flex-child-projects">
-                        <div class="flex-tic-tac-toe">
-                            <div class="flex-container-single-project">
-                                <div class="flex-child-single-project">
-                                    <h2>Hacked My Professor</h2>
-                                    <p>
-                                        In Spring quarter 2023, I was able to successfully plan and execute an attack against my cybersecurity professor where I coerced my professor. 
-                                        For this attack, I created a convincing replica of a student organization's web page which led to a clone of our school's SSO login page to view 
-                                        the full site. Beyond the technical proficiency required for this attack, I also needed to develop a strong understanding of social engineering 
-                                        to convince the professor to follow through with the attack himself. Leveraging my social engineering skills, I was able to engage my professor 
-                                        in a conversation regarding the controversial organization, which led him to check out the replica website I directed him to. Once here, the site 
-                                        seamlessly redirected to my malicious SSO page inorder to view recorded content supposedly hosted on our schools learning management system. 
-                                        My professor quickly entered his school credentials into the malicious site, which I could have saved for future attacks. This project taught 
-                                        me the importance of social engineering as well as technical competence needed for an adversary to carry out a successful attack. You can view 
-                                        the fake SSO page <a target="_blank" href="#">here</a>
-                                    </p>
-                                </div>
+                        <div class="flex-container-single-project">
+                            <div class="flex-child-single-project">
+                                <h2>Hacked My Professor</h2>
+                                <p>
+                                    In Spring quarter 2023, I was able to successfully plan and execute an attack against my cybersecurity professor where I coerced my professor. 
+                                    For this attack, I created a convincing replica of a student organization's web page which led to a clone of our school's SSO login page to view 
+                                    the full site. Beyond the technical proficiency required for this attack, I also needed to develop a strong understanding of social engineering 
+                                    to convince the professor to follow through with the attack himself. Leveraging my social engineering skills, I was able to engage my professor 
+                                    in a conversation regarding the controversial organization, which led him to check out the replica website I directed him to. Once here, the site 
+                                    seamlessly redirected to my malicious SSO page inorder to view recorded content supposedly hosted on our schools learning management system. 
+                                    My professor quickly entered his school credentials into the malicious site, which I could have saved for future attacks. This project taught 
+                                    me the importance of social engineering as well as technical competence needed for an adversary to carry out a successful attack. You can view 
+                                    the fake SSO page <a target="_blank" href="#">here</a>
+                                </p>
+                            </div>
+                            <div class="flex-child-single-project">
+                                <img class="tic-tac-toe-img" src="img/hacked-computer.png" alt="a hacked computer">
                             </div>
                         </div>
                         <div class="flex-container-single-project">
@@ -94,12 +121,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="contactme" class="pagecontent">
-                <h1>Contact Me!</h1>
-                <p>
-                    Email: zkornas@uw.edu
-                </p>
             </div>
         </div>
     </body>

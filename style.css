@@ -117,6 +117,10 @@ a.caption {
     font-size: 20px;
 }
 
+.aboutmeparagraph {
+    font-size: 28px;
+}
+
 .pagecontent {
     padding-left: 100px;
     display: none;
