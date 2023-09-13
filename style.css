@@ -172,7 +172,26 @@ a.caption {
     flex: 1;
 }
 
+.flex-child-single-project-reversed {
+    flex: 1;
+}
+
+.flex-child-single-project-reversed:last-child {
+    margin-right: 20%;
+    flex-grow: 3;
+    font-size: 22px;
+}
+
+.flex-child-single-project-reversed:first-child {
+    margin-left: 20%;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 5%;
+    height: 250px;
+}
+
 .flex-child-single-project:last-child {
+    margin-right: 20%;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 5%;
@@ -180,8 +199,8 @@ a.caption {
 }
 
 .flex-child-single-project:first-child {
-    margin-right: 20px;
-    flex-grow: 1;
+    margin-left: 20%;
+    flex-grow: 3;
     font-size: 22px;
 }
 
