@@ -68,11 +68,13 @@ h2, h1, p {
 
 h1.heading {
     margin: 0;
+    margin-right: 5%;
     padding: 0;
 }
 
 p.heading {
     margin: 0;
+    margin-right: 5%;
     padding: 0;
     color: #494949;
 }
@@ -148,8 +150,7 @@ a.caption {
 }
 
 .zach {
-    max-height: 100%;
-    min-height: 90%;
+    max-height: 150%;
     border-color:#d9d8d8;
     border-radius: 10px;
     border-style: solid;
