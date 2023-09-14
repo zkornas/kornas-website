@@ -179,6 +179,7 @@ a.caption {
 
 .flex-child-single-project-reversed:last-child {
     margin-right: 20%;
+    padding-left: 75px;
     flex-grow: 3;
     font-size: 22px;
 }
@@ -201,6 +202,7 @@ a.caption {
 
 .flex-child-single-project:first-child {
     margin-left: 20%;
+    padding-right: 75px;
     flex-grow: 3;
     font-size: 22px;
 }
