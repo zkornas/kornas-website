@@ -137,11 +137,13 @@ a.caption {
 }
 
 .flex-child:first-child{
+    padding-left: 20%;
     margin-right: 20px;
     flex-grow: 1;
 }
 
 .flex-child:last-child {
+    padding-right: 20%;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 5%;
