@@ -288,7 +288,6 @@ a.caption {
 }
 
 .post-img {
-    margin-top: 20%;
     max-height: 150%;
     border-radius: 10px;
     justify-content: center;
@@ -328,7 +327,7 @@ a.caption {
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1650px) {
     .flex-child-single-post:first-child,
     .flex-child:first-child,
     .flex-child-single-post-reversed:first-child {
