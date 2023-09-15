@@ -1,3 +1,5 @@
+/*CSS for sidebar stuff*/
+
 .sidebar {
     height: 100%;
     width: 0;
@@ -61,6 +63,95 @@ h2, h1, p {
     padding: 20px;
 }
 
+/*CSS for dark mode toggle*/
+
+body.dark-theme {
+    background: #121212;
+    transition: 0.3s;
+}
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme p {
+    color: #eee;
+    transition: 0.3s;
+}
+body.dark-theme a {
+    color: #809fff;
+    transition: 0.3s;
+}
+header.dark-theme {
+    background-color: #d9d8d8;
+    transition: 0.3s;
+}
+
+.switch {
+    position: fixed;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 34px;
+}
+  
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #1d1235;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #1d1235;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+  .slider.round:before {
+    border-radius: 50%;
+}
+
+/*CSS for grey header at top of page*/
+
 .heading {
     text-align: right;
     padding: 10px;
@@ -98,6 +189,8 @@ p.heading {
 .flex-child-header:last-child {
     text-align: right;
 }
+
+/*CSS for about me section*/
 
 p.caption {
     padding-top: 10px;
@@ -137,13 +230,13 @@ a.caption {
 }
 
 .flex-child:first-child{
-    padding-left: 20%;
+    margin-left: 20%;
     margin-right: 20px;
     flex-grow: 1;
 }
 
 .flex-child:last-child {
-    padding-right: 20%;
+    margin-right: 20%;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 5%;
@@ -158,43 +251,35 @@ a.caption {
     border-style: solid;
 }
 
-.flex-container-projects {
+
+
+/*CSS for individual projects/research posts*/
+
+.flex-container-posts {
     display: flex;
     flex-direction: column;
 }
 
-.flex-child-projects {
+.flex-child-posts {
     flex: 1;
 }
 
-.flex-container-single-project {
+.flex-container-single-post {
     display: flex;
 }
 
-.flex-child-single-project {
+.flex-child-single-post {
     flex: 1;
 }
 
-.flex-child-single-project-reversed {
-    flex: 1;
-}
-
-.flex-child-single-project-reversed:last-child {
-    margin-right: 20%;
-    padding-left: 75px;
+.flex-child-single-post:first-child {
+    margin-left: 20%;
+    padding-right: 75px;
     flex-grow: 3;
     font-size: 22px;
 }
 
-.flex-child-single-project-reversed:first-child {
-    margin-left: 20%;
-    text-align: left;
-    padding-top: 15px;
-    padding-bottom: 5%;
-    height: 250px;
-}
-
-.flex-child-single-project:last-child {
+.flex-child-single-post:last-child {
     margin-right: 20%;
     text-align: center;
     padding-top: 15px;
@@ -202,19 +287,33 @@ a.caption {
     height: 250px;
 }
 
-.flex-child-single-project:first-child {
-    margin-left: 20%;
-    padding-right: 75px;
-    flex-grow: 3;
-    font-size: 22px;
-}
-
-.tic-tac-toe-img {
+.post-img {
     margin-top: 20%;
-    max-height: 120%;
+    max-height: 150%;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+}
+
+/*CSS for reverse order individual projects/research posts*/
+
+.flex-child-single-post-reversed {
+    flex: 1;
+}
+
+.flex-child-single-post-reversed:first-child {
+    margin-left: 20%;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 5%;
+    height: 250px;
+}
+
+.flex-child-single-post-reversed:last-child {
+    margin-right: 20%;
+    padding-left: 75px;
+    flex-grow: 3;
+    font-size: 22px;
 }
 
 
@@ -226,5 +325,19 @@ a.caption {
 
     .sidebar a {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .flex-child-single-post:first-child,
+    .flex-child:first-child,
+    .flex-child-single-post-reversed:first-child {
+        margin-left: 0;
+    }
+
+    .flex-child-single-post:last-child,
+    .flex-child:last-child,
+    .flex-child-single-post-reversed:last-child {
+        margin-right: 0;
     }
 }

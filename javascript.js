@@ -1,5 +1,6 @@
 var myPageIds = ['aboutme', 'myresearch', 'myprojects', 'contactme'];
 var isOpen = false;
+var isDark = false;
 
 function sideBar() {
     if (isOpen) {
@@ -31,4 +32,18 @@ function showContent(id) {
             document.getElementById(pageId).style.display = "none";
         }
     });
+}
+
+
+function isDarkMode() {
+    if (!isDark) {
+        document.body.classList.add("dark-theme");
+        document.getElementById("header").style.backgroundColor = "black";
+        isDark = true;
+    } else {
+        document.body.classList.remove("dark-theme");
+        document.getElementById("header").classList.remove("dark-theme");
+        document.getElementById("header").style.backgroundColor = "#d9d8d8";
+        isDark = false;
+    }
 }

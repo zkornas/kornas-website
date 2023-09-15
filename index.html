@@ -13,10 +13,14 @@
             <a href="#" onclick="closeSidebar(); showContent('myprojects')">Projects</a>
             <a href="docs/Zacharia Kornas Resume.pdf"
             target="_blank"onclick="closeSidebar();">CV</a>
+            <label class="switch">
+                <input type="checkbox" onclick="isDarkMode();">
+                <span class="slider round"></span>
+            </label>
         </div>
         
         <div id="sidebar">
-            <div class="flex-container-header">
+            <div id="header" class="flex-container-header">
                 <div class="flex-child-header">
                     <button class="openbtn" onclick="sideBar()">&#9776;</button>
                 </div>
@@ -47,7 +51,7 @@
                             Zacharia Kornas
                         </p>
                         <p style="font-size: 16px;">
-                            Email: <a target="_blank" href="zkornas@uw.edu">zkornas@uw.edu</a> <br>
+                            Email: <a target="_blank" href="mailto:zkornas@uw.edu">zkornas@uw.edu</a> <br>
                             Github: <a target="_blank" href="https://github.com/zkornas">github.com/zkornas</a> <br>
                             LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/zkornas/">linkedin.com/in/zkornas/</a>
                         </p>
@@ -56,24 +60,24 @@
             </div>
             <div id="myresearch" class="pagecontent">
                 <h1>My Research</h1>
-                <div class="flex-container-projects">
-                    <div class="flex-child-projects">
-                        <div class="flex-container-single-project">
-                            <div class="flex-child-single-project">
+                <div class="flex-container-posts">
+                    <div class="flex-child-posts">
+                        <div class="flex-container-single-post">
+                            <div class="flex-child-single-post">
                                 <h2>Bandwidth Inflation Attacks in Tor</h2>
                                 <p>
                                     I am currently working on a research project exploring bandwidth inflation attacks within Tor. Specifically, we are researching how Tor’s bandwidth scanner (sbws) is used to verify bandwidth measurements of relays within the Tor network, and how an adversary can manipulate these readings to gain an unfair advantage in circuit construction. To do this, we have constructed a simulated Tor network using Raspberry Pis acting as various nodes. We hope to survey the current literature around bandwidth inflation attacks, understand how sbws currently attempts to mitigate bandwidth inflation attacks, and propose a solution to this issue that can work alongside or replace Tor’s current bandwidth scanner.
                                 </p>
                             </div>
-                            <div class="flex-child-single-project">
-                                <img class="tic-tac-toe-img" src="img/tor.png" alt="The Tor logo">
+                            <div class="flex-child-single-post">
+                                <img class="post-img" src="img/bandwidth-inflation.png" alt="Bandiwdth Inflation Attack cartoon">
                             </div>
                         </div>
-                        <div class="flex-container-single-project">
-                            <div class="flex-child-single-project-reversed">
-                                <img class="tic-tac-toe-img" src="img/tor.png" alt="The Tor logo">
+                        <div class="flex-container-single-post">
+                            <div class="flex-child-single-post-reversed">
+                                <img class="post-img" src="img/simulator.png" alt="SimulaTor cartoon">
                             </div>
-                            <div class="flex-child-single-project-reversed">
+                            <div class="flex-child-single-post-reversed">
                                 <h2>SimulaTor</h2>
                                 <p>
                                     While tools such as Chutney and Shadow allow researchers to create virtual Tor networks, there is no resource to help researchers create a simulated Tor network using physical nodes. While researching bandwidth inflation attacks, I have been compiling information on creating a physical private Tor network and plan to release the SimulaTor framework soon. Replicability is extremely important in research, and I hope that the SimulaTor framework will allow other researchers to be able to easily create simulated Tor networks to verify others' findings.
@@ -85,24 +89,24 @@
             </div>
             <div id="myprojects" class="pagecontent">
                 <h1>My Projects</h1>
-                <div class="flex-container-projects">
-                    <div class="flex-child-projects">
-                        <div class="flex-container-single-project">
-                            <div class="flex-child-single-project">
+                <div class="flex-container-posts">
+                    <div class="flex-child-posts">
+                        <div class="flex-container-single-post">
+                            <div class="flex-child-single-post">
                                 <h2>Hacked My Professor</h2>
                                 <p>
-                                    In Spring quarter 2023, I was able to successfully plan and execute an attack against my cybersecurity professor where I coerced my professor. For this attack, I created a convincing replica of a student organization's web page which led to a clone of our school's SSO login page to view the full site. Beyond the technical proficiency required for this attack, I also needed to develop a strong understanding of social engineering to convince the professor to follow through with the attack himself. Leveraging my social engineering skills, I was able to engage my professor in a conversation regarding the controversial organization, which led him to check out the replica website I directed him to. Once here, the site seamlessly redirected to my malicious SSO page inorder to view recorded content supposedly hosted on our schools learning management system. My professor quickly entered his school credentials into the malicious site, which I could have saved for future attacks. This project taught me the importance of social engineering as well as technical competence needed for an adversary to carry out a successful attack. You can view the fake SSO page <a target="_blank" href="#">here</a>
+                                    In Spring quarter 2023, I was able to successfully plan and execute an attack against my cybersecurity professor where I coerced my professor into entering his school login information into my fake malicious webpage. For this attack, I created a convincing replica of a student organization's web page which led to a clone of our school's SSO login page to view the full site. Beyond the technical proficiency required for this attack, I also needed to develop a strong understanding of social engineering to convince the professor to follow through with the attack himself. Leveraging my social engineering skills, I was able to engage my professor in a conversation regarding the controversial organization, which led him to check out the replica website I directed him to. Once here, the site seamlessly redirected to my malicious SSO page inorder to view recorded content supposedly hosted on our schools learning management system. My professor quickly entered his school credentials into the malicious site, which I could have saved for future attacks. This project taught me the importance of social engineering as well as technical competence needed for an adversary to carry out a successful attack. You can view the fake SSO page <a target="_blank" href="#">here</a>
                                 </p>
                             </div>
-                            <div class="flex-child-single-project">
-                                <img class="tic-tac-toe-img" src="img/hacked-professor.png" alt="a hacked computer">
+                            <div class="flex-child-single-post">
+                                <img class="post-img" src="img/hacked-professor.png" alt="a hacked computer">
                             </div>
                         </div>
-                        <div class="flex-container-single-project">
-                            <div class="flex-child-single-project-reversed">
-                                <img class="tic-tac-toe-img" src="img/tic-tac-toe-game.png" alt="tic-tac-toe clip art">
+                        <div class="flex-container-single-post">
+                            <div class="flex-child-single-post-reversed">
+                                <img class="post-img" src="img/tic-tac-toe-game.png" alt="tic-tac-toe game cartoon">
                             </div>
-                            <div class="flex-child-single-project-reversed">
+                            <div class="flex-child-single-post-reversed">
                                 <h2>Tic-Tac-Toe</h2>
                                 <p>
                                     In this project, I worked with a team to develop a Java-based multiplayer Tic-Tac-Toe game following the provided Tic-Tac-Toe RFC. Utilizing a server-client architecture, players were able to connect seamlessly from multiple platforms to host and play games and ensure universal compatibility. We were able to implement many user-friendly features, such as game session management, real-time move updates, and game result notifications. Check out our Tic-Tac-Toe game <a target="_blank" href="https://github.com/zkornas/TicTacToeRFC">here</a>!
