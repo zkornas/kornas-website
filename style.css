@@ -14,7 +14,7 @@
     font-family: sans-serif;
 }
 
-h2, h1, p {
+h2, h1, p, a {
     font-family: sans-serif;
 }
 
@@ -204,6 +204,10 @@ a.caption {
     font-family: sans-serif;
 }
 
+h1 {
+    font-size: 42px;
+}
+
 .aboutme {
     padding-left: 100px;
     content: "";
@@ -250,6 +254,7 @@ a.caption {
     border-radius: 10px;
     border-style: solid;
 }
+
 
 
 
@@ -315,6 +320,26 @@ a.caption {
     font-size: 22px;
 }
 
+/*CSS for course projects*/
+.flex-container-course-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-child-single-post-courses {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-right: 75px;
+    flex-grow: 3;
+    font-size: 22px;
+    text-align: left;
+}
+
+a.course-project {
+    margin-left: 50px;
+    line-height: 1.5;
+}
+
 
 
 @media screen and (max-height: 450px) {
@@ -330,13 +355,15 @@ a.caption {
 @media (max-width: 1650px) {
     .flex-child-single-post:first-child,
     .flex-child:first-child,
-    .flex-child-single-post-reversed:first-child {
+    .flex-child-single-post-reversed:first-child,
+    .flex-child-single-post-courses {
         margin-left: 0;
     }
 
     .flex-child-single-post:last-child,
     .flex-child:last-child,
-    .flex-child-single-post-reversed:last-child {
+    .flex-child-single-post-reversed:last-child,
+    .flex-child-single-post-courses {
         margin-right: 0;
     }
 }
