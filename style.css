@@ -271,6 +271,7 @@ h1 {
 
 .flex-container-single-post {
     display: flex;
+    align-items: center;
 }
 
 .flex-child-single-post {
