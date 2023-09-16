@@ -366,5 +366,6 @@ a.course-project {
     .flex-child-single-post-reversed:last-child,
     .flex-child-single-post-courses {
         margin-right: 0;
+        padding-right: 100px;
     }
 }
