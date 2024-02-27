@@ -1,5 +1,0 @@
-﻿{
-  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
-  "Domain": "kornas.info",
-  "Id": "7312a6aa-6097-4690-9771-e71b2948f66a"
-}
